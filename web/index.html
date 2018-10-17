@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+    <meta charset="UTF-8">
+    <title>TensorflowJS DEMO</title>
+</head>
+
+  <body>
+    <div class="container" style="padding-top:10%">
+      <div class="row row-center">
+        <div style="padding-left: 25%" class="column">
+           <h1><strong>Dibuja un número entre 0 y 9 </strong></h1>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="column" style="padding-left: 35%">
+            <div id=canvas></div>
+          </div>
+      </div>
+
+      <div class="row" style="padding-top:20px">
+        <div class="column" style="padding-left: 37%">
+          <button class="button button-black" onclick="run()">Predecir</button>
+          <button class="button button-black" onclick="clearCanvas()">Limpiar</button>
+        </div>
+      </div>
+      <div class="row" style="padding-top:20px">
+        <div class="column">
+          <h2 style="padding-left: 38%" id="prediction"></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    Hecho con amor por <a href="https://github.com/maravenag"> Matias</a>
+  </footer>
+  <script src="canvas.js"> </script>
+  <script src="app.js"> </script>
+</html>
